@@ -11,7 +11,7 @@ import (
 
 func main() {
 	reader := bufio.NewReader(os.Stdin)
-	//Get the first value
+	//Get the first value's input
 	fmt.Print("Value 1: ")
 	input1, _ := reader.ReadString('\n')
 	float1, err := strconv.ParseFloat(strings.TrimSpace(input1), 64)
@@ -19,7 +19,7 @@ func main() {
 		fmt.Println(err)
 		panic("Value 1 must be a number")
 	}
-	//Get the second value
+	//Gets the second value's iput
 	fmt.Print("Value 2: ")
 	input2, _ := reader.ReadString('\n')
 	float2, err := strconv.ParseFloat(strings.TrimSpace(input2), 64)
