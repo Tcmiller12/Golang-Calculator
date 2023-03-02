@@ -11,7 +11,6 @@ import (
 
 func main() {
 	reader := bufio.NewReader(os.Stdin)
-
 	//Get the first value
 	fmt.Print("Value 1: ")
 	input1, _ := reader.ReadString('\n')
@@ -20,7 +19,6 @@ func main() {
 		fmt.Println(err)
 		panic("Value 1 must be a number")
 	}
-
 	//Get the second value
 	fmt.Print("Value 2: ")
 	input2, _ := reader.ReadString('\n')
@@ -29,10 +27,8 @@ func main() {
 		fmt.Println(err)
 		panic("Value 2 must be a number")
 	}
-
-	//Compute the sum
+	//Compute the sum & displays it
 	sum := float1 + float2
 	sum = math.Round(sum*100) / 100
 	fmt.Printf("The sum of %v and %v is %v\n\n", float1, float2, sum)
-
 }
