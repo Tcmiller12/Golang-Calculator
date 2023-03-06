@@ -11,7 +11,7 @@ import (
 
 func main() {
 	// parse the given serial number
-	result := parseSerialNumber("SerialNumber=018277314057SerialNumber=")
+	result := parseSerialNumber("SerialNumber=018277314057")
 	fmt.Println("the serial number is", result)
 	return 
 	
